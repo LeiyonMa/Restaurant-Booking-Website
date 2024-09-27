@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Booking</title>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHS08lt2Wg7RYnWEgGkJvm2jfRfxc1nJNn0g&usqp=CAU" />
+  <link href="bookingStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <body>
+    <section class="header">
+        <nav>
+            <img src= "https://static.otta.com/uploads/images/company-logos/2274-5cj_w86blf4liJ6VD3ROD6aO2S6Vj1vUiLsGD3cEy3w.png">
+            <div class = "nav-links" id="navLinks">
+                
+                <ul>
+                    <li><a href = "/index.html">Home</a></li>
+                    <li><a href = "/aboutUs.html">About Us</a></li>
+                    <li><a href = "/booking.html">For Bookings</a></li>
+                    <li><a href = "/contactUs.html">Contact Us</a></li>
+                    <a href = "/signUp.html" class="button2" >Sign Up  / Login </a>
+                </ul>
+            </div>  
+        </nav>
+
+        <form action="javascript:" class="search-bar">
+	<input type="search" name="search" pattern=".*\S.*" required>
+	<button class="search-btn" type="submit">
+		<span>Search</span>
+	</button>
+</form>
+    
+ 
+  <button onclick="setRestarauntData()" id="setDetailsButton" disabled="true"></button>
+
+  <div class="top">
+      <h1 >Restaurant Details</h1>
+  </div>
+  
+  <div id="restaraunts">
+    <p id="statusText">Not Yet Loaded</p>
+
+  </div>
+
+  
+
+
+    
+  <script src="script.js"></script>
+</body>
+
+</html>
+

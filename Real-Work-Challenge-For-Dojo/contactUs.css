@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Smooch Sans', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    min-height:100vh;
+    width:100% ; 
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(https://press.thesavoylondon.com/wp-content/uploads/2021/10/503353.jpg);
+background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-size: 25px;
+}
+
+nav{
+    display:flex;
+    padding: 2% 6%; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-links ul li::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background: #008080;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%
+}
+
+.text-box{
+    width:90%;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.text-box h1{
+    font-size: 70px;
+}
+
+.text-box p{
+    margin : 10px 0 40px;
+    font-size: 40px;
+    color:#FFFFFF;
+}
+
+.button1{
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #60a3bc;
+	padding: 25px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+    font-size: 30px;
+}
+
+.button1:hover{
+    background: transparent;
+}
+
+.button2
+
+nav .fa{
+    display:none;
+}
+
+@media (max-width: 700px){
+    .text-box h1{
+      font-size: 70px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #9c9c9c;
+        height:100vh;
+        width: 200px;
+        top: 0;
+        right: -100;
+        text-align:left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: #ffffff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+   
+}
+
+body {
+	margin: 0;
+	background-color: #ffffff;
+}
+
+.button2{
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: transparent;
+	padding: 25px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+    font-size: 30px;
+}
+
+.button2:hover{
+    background: #60a3bc;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 24px;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  opacity:2;
+  padding: 20px;
+}
+
